@@ -14,6 +14,9 @@
 .label-car-home {
   padding-right: 10px
 }
+i:hover {
+  color: #fcdb00;
+}
 
 @media screen and (max-width: 992px){
   .icons {

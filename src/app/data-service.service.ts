@@ -6,14 +6,14 @@ import { Injectable } from '@angular/core';
 
 export class DataServiceService {
   private models_car = [
-    {name: 'bmw', url: '/bmw', image: 'assets/bmw/bmw.jpg', label: 'assets/bmw/bmw_label.png'},
-    {name: 'audi', url: '/audi', image: 'assets/audi/audi.jpg', label: 'assets/audi/audi_label.png'},
-    {name: 'volkswagen', url: '/volkswagen', image: 'assets/volkswagen/volkswagen.jpg', label: 'assets/volkswagen/volkswagen_label.png'},
+    {name: 'BMW', url: '/bmw', image: 'assets/bmw/bmw.jpg', label: 'assets/bmw/bmw_label.png'},
+    {name: 'Audi', url: '/audi', image: 'assets/audi/audi.jpg', label: 'assets/audi/audi_label.png'},
+    {name: 'Volkswagen', url: '/volkswagen', image: 'assets/volkswagen/volkswagen.jpg', label: 'assets/volkswagen/volkswagen_label.png'},
   ];
   private main_menu = [
-    {name: 'Cars', path: ''},
-    {name: 'About', path: '/about'},
-    {name: 'Contact us', path: '/contacts'},
+    {name: 'Cars', path: '', function: 'cars'},
+    {name: 'About', path: '/about', function: '#'},
+    {name: 'Contact us', path: '/contacts', function: 'contact'},
   ];
   footer_text: string = 'HALOVIETNAM LTD\n' +
     '          66, Dang Van ngu, Dong Da\n' +

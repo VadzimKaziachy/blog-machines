@@ -17,7 +17,7 @@
   white-space: nowrap;
 }
 .menu__item a:hover{
-  text-decoration: underline
+  text-decoration: underline;
 }
 .logo {
   display: block;

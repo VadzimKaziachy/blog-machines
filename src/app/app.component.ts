@@ -12,6 +12,8 @@ export class AppComponent {
   private cars = [];
   private footer: string;
   private email: string;
+  private isTypesCar: boolean;
+  private isContactUs: boolean;
 
   constructor(private dataService: DataServiceService) {
     this.menu = this.dataService.getMenu();
@@ -25,6 +27,14 @@ export class AppComponent {
     } else {
       console.log('письмо не отправленно');
       this.email = 'error';
+    }
+  }
+  extraMenu(value) {
+    if (value === 'cars' && !this.isContactUs) {
+      this.isTypesCar = !this.isTypesCar;
+    }
+    if (value === 'contact' && !this.isTypesCar) {
+      this.isContactUs = !this.isContactUs;
     }
   }
 }

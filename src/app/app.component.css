@@ -57,6 +57,7 @@
   width: 580px;
   padding: 14px 0;
   margin-right: 21px;
+  margin-bottom: 21px;
   border:0;
   padding-left: 23px;
   outline: none;
@@ -69,9 +70,10 @@
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
-  width: 126px;
+  width: 580px;
   border: 0;
   padding: 14px 0;
+  margin-right: 21px;
   cursor: pointer;
   outline: none;
 }
@@ -88,7 +90,6 @@
     width: 100%
   }
   .form__btn {
-    margin-top: 20px;
     width: 100%
   }
 }
